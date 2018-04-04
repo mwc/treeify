@@ -1,0 +1,48 @@
+{
+    "name": "treeify-js",
+    "version": "0.0.3",
+    "description": "Converts an array to a tree object.",
+    "main": "index.js",
+    "directories": {
+        "example": "examples"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-es2015": "^6.24.1",
+        "benchmark": "^2.1.4",
+        "chai": "^4.1.2",
+        "eslint": "^4.19.1",
+        "gulp": "^3.9.1",
+        "gulp-babel": "^7.0.1",
+        "gulp-mocha": "^5.0.0",
+        "gulp-rollup": "^2.16.2"
+    },
+    "scripts": {
+        "test": "gulp test",
+        "build": "gulp"
+    },
+    "files": [
+        "dist/treeify.js"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mwc/treeify.git"
+    },
+    "keywords": [
+        "convert",
+        "array",
+        "tree"
+    ],
+    "author": {
+        "name": "maowenchao",
+        "email": "mwc@foxmail.com",
+        "url": "https://wenchao.org"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mwc/treeify/issues"
+    },
+    "homepage": "https://github.com/mwc/treeify#readme"
+}
