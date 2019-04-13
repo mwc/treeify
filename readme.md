@@ -1,26 +1,17 @@
 
-treeify.js - v0.0.3（MIT）
+treeify.js - v1.0.2（under MIT）
 ===
 
 What's treeify?
----
-`treeify.js` is a tool for converting an array (each element contains the same specific rules) into an object.
+---------------
+`treeify.js` is a tool for converting an array which each element contains the same specific rules into an object.
 
-treeify 是将一个数组（每个元素包含相同的特定的规则）转换为一个对象的工具。
-
-
-Constructor Parameters
----
-```javascript
-treeify(data, idKey = 'id', parentIdKey = 'parentId', childrenName = 'children')
-```
-
-- `data` {Array} 一个一维数组，该数组中每个元素均必须是一个对象，对象至少包含两个属性：
-    - 唯一id的属性，如名称为 "id" 的属性；
-    - 指向父级id的属性，如名称为 "parentId" 的属性。
-- `idKey` {string} 标识元素中哪个属性是代表唯一id的名称，默认为 "id"
-- `parentIdKey` {string} 标识元素中哪个属性是代表指向父元素的id，默认为 "parentId"
-- `childrenName` {string} 默认情况下将向元素添加一个名为 'children' 的属性，代表当前元素的子级。可通过此参数修改这个名称。
+What's New in v1.0.2?
+---------------------
+- In addition to the first parameter, the other parameters of function treeify are replace by an `object`.
+- Add `untreeify()` to convert a tree comes from `treeify()` back into an array.
+  `untreeify()` is the inverse of `treeify()`.
+- Add `unit tests`
 
 Installation
 ---
@@ -28,8 +19,14 @@ Installation
 $ npm install --save-dev treeify-js
 ```
 
-Build
+Build & Test
 ---
+Packages `gulp` and `mocha` should already be installed globally.
+You should also run `$ npm install` first to install all dependencies.
+
+Run the `build` script to build, and the `test` script to run unit test.
+
+
 ```cmd
 $ npm run build
 ```
@@ -37,7 +34,7 @@ $ npm run build
 Usage
 ---
 
-You have an array now:
+So, now we have an array:
 
 
 ```javascript
@@ -101,14 +98,18 @@ Then, You need to convert to such a tree object:
     
 ```
 
-You just need to write this :
+You just need to give the array to treeify:
 
 ```javascript
 treeify(arr);
 ```
 
+Then, you get what you want, It's an easy work.
+
+Check the **`unit tests`** to get more usage.
+
 Enjoy!
 
 License
 ---
-treeify is MIT licensed.
+treeify is under MIT licensed.
