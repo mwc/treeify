@@ -2,6 +2,12 @@
 treeify.js - v1.0.3（under MIT）
 ===============================
 
+![Build](https://img.shields.io/badge/build-passing-green.svg)
+![Unit Tests](https://img.shields.io/badge/tests-8%20passed-green.svg)
+![Coverage](https://img.shields.io/badge/coverage-100%25-green.svg)
+![npm bundle size](https://img.shields.io/bundlephobia/min/treeify-js.svg)
+![License](https://img.shields.io/github/license/mwc/treeify.svg)
+
 What's treeify?
 ---------------
 `treeify.js` is a tool for converting an array which each element contains the same specific rules into an object.
