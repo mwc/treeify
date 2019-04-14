@@ -1,12 +1,12 @@
 
-treeify.js - v1.0.2（under MIT）
-===
+treeify.js - v1.0.3（under MIT）
+===============================
 
 What's treeify?
 ---------------
 `treeify.js` is a tool for converting an array which each element contains the same specific rules into an object.
 
-What's New in v1.0.2?
+What's New in v1.0.3?
 ---------------------
 - In addition to the first parameter, the other parameters of function treeify are replace by an `object`.
 - Add `untreeify()` to convert a tree comes from `treeify()` back into an array.
@@ -14,13 +14,13 @@ What's New in v1.0.2?
 - Add `unit tests`
 
 Installation
----
+------------
 ```cmd
 $ npm install --save-dev treeify-js
 ```
 
 Build & Test
----
+------------
 Packages `gulp` and `mocha` should already be installed globally.
 You should also run `$ npm install` first to install all dependencies.
 
@@ -32,7 +32,7 @@ $ npm run build
 ```
 
 Usage
----
+-----
 
 So, now we have an array:
 
@@ -110,6 +110,29 @@ Check the **`unit tests`** to get more usage.
 
 Enjoy!
 
-License
+API
 ---
++ **treeify(data, configure)**
+
+	Convert an array to a tree object. An array which as data source, all element of it must be an object that has an unique ID and a parent's ID.
+
+	- `data` *Array* - Give a data which Array type to treeify
+	- `configure` *Object* - A Object that Configure keys name mapping in convertion. The most common usage is no any configuration, just give the data along.
+		* `id`: *string|Function* - default value is "id".
+		* `parentId`: *string|Function* - default value is "parentId".
+		* `children`: *string|Function* - default value is "children".
+		* `root`: *any type* - specify a value directly, the value can be any type, if return a value which an array type, it means 'contains', such as { root: () => ["xxxx"] }, it is the same as { root: () => "xxxx" } if only one value is returned. default value is null.
+		* `multi`: *boolean* - If the 'multi' is set * to TRUE, it can have multiple roots, FALSE can only have one, default value is false.
+		* `deepClone`: *boolean* - Whether deep clone all elements of data in convert, default value is false.
+
++ **untreeify(tree, childrenName)**
+
+	Convert a tree from treeify() back into an array. This is the inverse of treeify.
+
+	- `tree` *Object* - A tree comes from treeify
+	- `childrenName` *String|Function* - Give the children's key name, it can also be a function. default value is **"children"**
+
+
+License
+--------
 treeify is under MIT licensed.

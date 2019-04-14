@@ -1,5 +1,5 @@
 /*!
- * treeify.js v1.0.2 - 2019/4
+ * treeify.js v1.0.3 - 2019/4
  * Convert an array to a tree object.
  * 
  * Copyright (C) mwc@foxmail.com

@@ -1,6 +1,6 @@
 {
     "name": "treeify-js",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Convert an array to a tree object.",
     "main": "index.js",
     "directories": {
@@ -35,7 +35,9 @@
     "keywords": [
         "convert",
         "array",
-        "tree"
+		"tree",
+		"treeify",
+		"array to tree"
     ],
     "author": {
         "name": "maowenchao",
