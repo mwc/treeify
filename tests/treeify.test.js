@@ -1,5 +1,5 @@
 const { treeify } = require("../build/treeify")
-const assert = require("chai").assert
+const { assert } = require("chai")
 
 describe("treeify", () => {
 	let data_common = [

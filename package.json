@@ -1,32 +1,36 @@
 {
     "name": "treeify-js",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Convert an array to a tree object.",
-    "main": "index.js",
+    "main": "dist/treeify.js",
+    "module": "dist/treeify.js",
+    "unpkg": "dist/treeify.js",
+    "jsdelivr": "dist/treeify.js",
     "directories": {
         "example": "examples"
     },
     "dependencies": {},
     "devDependencies": {
-        "babel-core": "^6.26.0",
-        "babel-preset-env": "^1.6.1",
-        "babel-preset-es2015": "^6.24.1",
+        "@babel/core": "^7.14.3",
+        "@babel/preset-env": "^7.14.2",
+        "@babel/preset-es2015": "^7.0.0-beta.53",
         "benchmark": "^2.1.4",
-        "chai": "^4.1.2",
-        "eslint": "^4.19.1",
-        "gulp": "^3.9.1",
-        "gulp-babel": "^7.0.1",
-        "gulp-mocha": "^5.0.0",
-        "gulp-rollup": "^2.16.2",
+        "chai": "^4.3.4",
+        "eslint": "^7.27.0",
+        "gulp": "^4.0.2",
+        "gulp-babel": "^8.0.0",
+        "gulp-mocha": "^8.0.0",
+        "gulp-rollup": "^2.17.0",
         "gulp-uglify": "^3.0.2",
-        "rollup": "^1.10.0"
+        "rollup": "^2.50.1"
     },
     "scripts": {
         "test": "gulp test",
         "build": "gulp"
     },
     "files": [
-        "dist/treeify.js"
+        "dist/*.js",
+        "src"
     ],
     "repository": {
         "type": "git",
@@ -35,14 +39,14 @@
     "keywords": [
         "convert",
         "array",
-		"tree",
-		"treeify",
-		"array to tree"
+        "tree",
+        "treeify",
+        "array to tree"
     ],
     "author": {
         "name": "maowenchao",
         "email": "mwc@foxmail.com",
-        "url": "https://wenchao.org"
+        "url": "https://github.com/mwc"
     },
     "license": "MIT",
     "bugs": {

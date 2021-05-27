@@ -1,6 +1,6 @@
 {
     "presets": [
-        "es2015"
+        "@babel/preset-es2015"
     ],
     "ignore": [
         "dist/*.js"

@@ -4,8 +4,10 @@ const rollup = require("gulp-rollup")
 const mocha = require("gulp-mocha")
 const uglify = require("gulp-uglify")
 
-gulp.task("rollup", function () {
-	return gulp.src("./src/treeify.js")
+const { task, src, dest, series } = gulp
+
+task("rollup", function () {
+	return src("./src/treeify.js")
 		.pipe(
 			rollup({
 				input: "./src/treeify.js",
@@ -15,22 +17,22 @@ gulp.task("rollup", function () {
 				}
 			})
 		)
-		.pipe(gulp.dest("./build"))
+		.pipe(dest("./build"))
 })
 
-gulp.task("test", ["rollup"], function () {
-	return gulp.src("./tests/*").pipe(mocha())
+task("test", series("rollup"), function () {
+	return src("./tests/*").pipe(mocha())
 })
 
-gulp.task("build", ["rollup"], function () {
-	return gulp.src("./build/treeify.js")
+task("build", series("rollup"), function () {
+	return src("./build/treeify.js")
 		.pipe(
 			babel({
 				presets: ["env"]
 			})
 		)
 		.pipe(uglify())
-		.pipe(gulp.dest("./dist"))
+		.pipe(dest("./dist"))
 })
 
-gulp.task("default", ["build"])
+task("default", series("build"))

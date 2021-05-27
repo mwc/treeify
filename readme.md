@@ -1,5 +1,5 @@
 
-treeify.js - v1.0.3（under MIT）
+treeify.js - v1.0.4（under MIT）
 ===============================
 
 ![Build](https://img.shields.io/badge/build-passing-green.svg)
@@ -8,22 +8,25 @@ treeify.js - v1.0.3（under MIT）
 ![npm bundle size](https://img.shields.io/bundlephobia/min/treeify-js.svg)
 ![License](https://img.shields.io/github/license/mwc/treeify.svg)
 
+[English](./readme.md) | [简体中文](./zh-cn.md)
+
 What's treeify?
 ---------------
 `treeify.js` is a tool for converting an array which each element contains the same specific rules into an object.
 
-What's New in v1.0.3?
----------------------
-- In addition to the first parameter, the other parameters of function treeify are replace by an `object`.
-- Add `untreeify()` to convert a tree comes from `treeify()` back into an array.
-  `untreeify()` is the inverse of `treeify()`.
-- Add `unit tests`
 
 Installation
 ------------
 ```cmd
 $ npm install --save-dev treeify-js
 ```
+
+CDN
+-----
+```
+[unpkg]  https://unpkg.com/treeify-js
+```
+
 
 Build & Test
 ------------
