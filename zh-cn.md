@@ -1,5 +1,5 @@
 
-treeify.js - v1.0.4（under MIT）
+treeify.js - v1.0.5（under MIT）
 ===============================
 
 ![Build](https://img.shields.io/badge/build-passing-green.svg)
@@ -110,6 +110,8 @@ var arr = [
 你只需要将数组交给 `treeify` 方法：
 
 ```javascript
+import { treeify } from 'treeify-js'
+
 treeify(arr);
 ```
 

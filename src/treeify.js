@@ -1,11 +1,9 @@
 /*!
- * treeify.js v1.0.4 - 2021/5
+ * treeify.js
  *
  * Convert an array to a tree object.
  * 
  * Copyright (C) mwc@foxmail.com
- * 2018-present.
- *  	v1.0.3 - 2019/4
  */
 
 function executeIfFunction(f) {
@@ -28,7 +26,7 @@ function deepClone(o) {
  * @param {Array}   data        Give a data source to treeify
  * @param {Object}  configure   Configure keys name mapping in convertion
  */
-function treeify(data, configure) {
+export function treeify(data, configure) {
 	const config = Object.assign(
 		{
 			id: "id",
@@ -107,7 +105,7 @@ function treeify(data, configure) {
  * @param {Object} tree             A tree comes from treeify
  * @param {String} childrenName     Give the children's key name, it can also be a function.
  */
-function untreeify(tree, childrenName = "children") {
+export function untreeify(tree, childrenName = "children") {
 	let result = []
 
 	if (!childrenName) {

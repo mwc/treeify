@@ -1,6 +1,6 @@
 {
     "name": "treeify-js",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Convert an array to a tree object.",
     "main": "dist/treeify.js",
     "module": "dist/treeify.js",
