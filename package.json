@@ -1,11 +1,11 @@
 {
     "name": "treeify-js",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Convert an array to a tree object.",
-    "main": "dist/treeify.js",
-    "module": "dist/treeify.js",
+    "main": "src/treeify.js",
+    "module": "src/treeify.js",
     "unpkg": "dist/treeify.js",
-    "jsdelivr": "dist/treeify.js",
+    "type": "module",
     "directories": {
         "example": "examples"
     },
@@ -29,8 +29,8 @@
         "build": "gulp"
     },
     "files": [
-        "dist/*.js",
-        "src"
+        "src",
+        "dist/*.js"
     ],
     "repository": {
         "type": "git",

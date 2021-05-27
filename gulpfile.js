@@ -1,8 +1,8 @@
-const gulp = require("gulp")
-const babel = require("gulp-babel")
-const rollup = require("gulp-rollup")
-const mocha = require("gulp-mocha")
-const uglify = require("gulp-uglify")
+import gulp from "gulp"
+import babel from "gulp-babel"
+import rollup from "gulp-rollup"
+import mocha from "gulp-mocha"
+import uglify from "gulp-uglify"
 
 const { task, src, dest, series } = gulp
 
