@@ -1,5 +1,5 @@
-const { treeify } = require("../build/treeify")
-const { assert } = require("chai")
+import { treeify } from "../src/treeify.js"
+import { assert } from "chai"
 
 describe("treeify", () => {
 	let data_common = [

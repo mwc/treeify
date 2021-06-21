@@ -20,7 +20,7 @@ task("rollup", function () {
 		.pipe(dest("./build"))
 })
 
-task("test", series("rollup"), function () {
+task("test", function () {
 	return src("./tests/*").pipe(mocha())
 })
 
