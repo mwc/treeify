@@ -24,15 +24,13 @@ task("test", function () {
 	return src("./tests/*").pipe(mocha())
 })
 
-task("build", series("rollup"), function () {
+task("build", function () {
 	return src("./build/treeify.js")
 		.pipe(
-			babel({
-				presets: ["env"]
-			})
+			babel()
 		)
 		.pipe(uglify())
 		.pipe(dest("./dist"))
 })
 
-task("default", series("build"))
+task("default", series("rollup", "build"))

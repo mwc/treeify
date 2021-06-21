@@ -1,5 +1,5 @@
 
-treeify.js - v1.0.7（under MIT）
+treeify.js - v1.0.8（under MIT）
 ===============================
 
 ![Build](https://img.shields.io/badge/build-passing-green.svg)
